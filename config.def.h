@@ -23,7 +23,7 @@ static int restrict_return = 0;             /* -1 option; if 1, disables shift-r
 #endif // RESTRICT_RETURN_PATCH
 /* -fn option overrides fonts[0]; default X11 font or font set */
 #if PANGO_PATCH
-static char font[] = "Iosevka Nerd Font:style=Regular:pixelsize=10:antialias=true:autohint=true";
+static char font[] = "monospace 10";
 #else
 #if XRESOURCES_PATCH
 static char *fonts[] =
@@ -86,14 +86,14 @@ char *colors[][2] = {
 	#endif // EMOJI_HIGHLIGHT_PATCH
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 14;
+static unsigned int lines      = 20;
 #if GRID_PATCH
 /* -g option; if nonzero, dmenu uses a grid comprised of columns and lines */
 static unsigned int columns    = 0;
 #endif // GRID_PATCH
 #if LINE_HEIGHT_PATCH
-static unsigned int lineheight = 0;         /* -h option; minimum height of a menu line     */
-static unsigned int min_lineheight = 8;
+static unsigned int lineheight = 18;         /* -h option; minimum height of a menu line     */
+static unsigned int min_lineheight = 18;
 #endif // LINE_HEIGHT_PATCH
 #if NAVHISTORY_PATCH
 static unsigned int maxhist    = 15;
