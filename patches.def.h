@@ -212,7 +212,7 @@
  * https://developer.gnome.org/pygtk/stable/pango-markup-language.html
  * https://github.com/StillANixRookie/dmenu-pango
  */
-#define PANGO_PATCH 1
+#define PANGO_PATCH 0
 
 /* With this patch dmenu will not directly display the keyboard input, but instead replace
  * it with dots. All data from stdin will be ignored.
