@@ -31,7 +31,7 @@ static char *fonts[] =
 static const char *fonts[] =
 #endif // XRESOURCES_PATCH
 {
-	"Iosevka Nerd Font:style=Regular:pixelsize=10:antialias=true:autohint=true"
+	"Iosevka Term,Iosevka Nerd Font:style=Regular:size=12:antialias=true:autohint=true"
 };
 #endif // PANGO_PATCH
 #if MANAGED_PATCH
@@ -86,14 +86,14 @@ char *colors[][2] = {
 	#endif // EMOJI_HIGHLIGHT_PATCH
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 20;
+static unsigned int lines      = 14;
 #if GRID_PATCH
 /* -g option; if nonzero, dmenu uses a grid comprised of columns and lines */
 static unsigned int columns    = 0;
 #endif // GRID_PATCH
 #if LINE_HEIGHT_PATCH
-static unsigned int lineheight = 18;         /* -h option; minimum height of a menu line     */
-static unsigned int min_lineheight = 18;
+static unsigned int lineheight = 0;         /* -h option; minimum height of a menu line     */
+static unsigned int min_lineheight = 8;
 #endif // LINE_HEIGHT_PATCH
 #if NAVHISTORY_PATCH
 static unsigned int maxhist    = 15;
